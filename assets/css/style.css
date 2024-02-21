@@ -17,11 +17,16 @@ h1 {
 
 .game_board {
     gap: 1rem;
-    margin: auto;
-}
 
-.number {
-    color: var(--fb-dark);
-    width: 100px;
-    aspect-ratio: 1;
+    .number {
+        color: var(--fb-dark);
+        width: 100px;
+        aspect-ratio: 1;
+        transition: .5s;
+    }
+
+    .number:hover {
+        scale: 0.8;
+        cursor: pointer;
+    }
 }

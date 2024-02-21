@@ -29,5 +29,4 @@ for (let i = 1; i <= 100; i++) {
         square.style.backgroundColor = 'var(--fb-primary)'
         gameBoard.append(square);
     }
-
 }
