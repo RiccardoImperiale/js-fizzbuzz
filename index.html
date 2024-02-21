@@ -9,20 +9,32 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <style>
+        :root {
+            --fb-dark: #083B4C;
+            --fb-primary: #1389B2;
+            --fb-fizz: #0CD6A1;
+            --fb-buzz: #FFD166;
+            --fb-fizzbuzz: #F0466F;
+        }
+
+        body {
+            background-color: var(--fb-dark);
+        }
+
         .game_board {
             gap: 1rem;
         }
 
         .number {
+            color: var(--fb-dark);
             min-width: calc(100% / 10 - 1rem);
             aspect-ratio: 1;
         }
     </style>
 </head>
 
-<body class="bg-primary">
-
-    <h1 class="text-center">tert</h1>
+<body>
+    <h1 class="text-center mt-5 text-white">FizzBuzzDOM</h1>
     <div class="container-sm p-5 game_board m-auto d-flex flex-wrap justify-content-center">
         <!-- <div class="number d-flex align-items-center justify-content-center bg-danger">
                 1
